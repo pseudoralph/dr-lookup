@@ -31,6 +31,22 @@ function noResults(q) {
   return card;
 }
 
-export { buildDrCard, noResults };
+function searchError(error) {
+  let card = document.createElement('div');
+  card.setAttribute('class', 'card mx-auto');
+
+  card.innerHTML = `<div class="card-header">
+  Error
+  </div>
+  <div class="card-body">
+    <p class="card-text">An error has occured: <code>${error}</code></p>
+    <p class="card-text">Please retry your search later.</p>
+  </div>`;
+
+  return card;
+
+}
+
+export { buildDrCard, noResults, searchError };
 
 
