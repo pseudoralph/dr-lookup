@@ -12,7 +12,7 @@
 
     <div class="container-fluid">
 
-      <div class="row">
+      <div class="row" id="top-search">
         <div class="col-md-4 mx-auto">
 
           <div class="card">
@@ -20,8 +20,12 @@
 
                 <div class="form-group">
                   <label for="query">What's ailing you?</label>
-                  <input type="text" class="form-control"  id="query">
+                  <input type="text" class="form-control" id="query">
                 </div>
+                <div class="form-group">
+                  <label for="query">Doctor's name (optional)</label>
+                  <input type="text" class="form-control" id="dr-name">
+                  </div>
                 <button class="btn btn-primary" id="search">Search
                 <span class="spinner-border spinner-border-sm hidden" role="status" id="loading"></span> 
                 </button>

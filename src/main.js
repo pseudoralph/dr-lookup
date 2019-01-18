@@ -1,5 +1,5 @@
 import { DrSearch } from './dr-search';
-import { buildDrCard } from './dr-search-ui';
+import { buildDrCard, noResults } from './dr-search-ui';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
@@ -12,19 +12,19 @@ document.onreadystatechange = function() {
 
 function search() {
   const query = document.getElementById('query').value;
+  const name = document.getElementById('dr-name').value;
+
   const loading = document.getElementById('loading');
   const responseOutput = document.getElementById('response');
   responseOutput.innerHTML = "";
   loading.classList.remove('hidden');
 
   const ailment = new DrSearch();
-  ailment.search('45.517%2C-122.670%2C25', '45.517%2C-122.670', query)
+  ailment.search('45.517%2C-122.670%2C25', '45.517%2C-122.670', name, query)
     .then(function(response) {
       loading.classList.add('hidden');
 
-      const results = JSON.parse(response)
-
-      // first name, last name, address, phone number, website and whether or not the doctor is accepting new patients 
+      const results = JSON.parse(response);
       if (results.meta.total > 0) {
         results.data.forEach(function(dr) {
 
@@ -34,13 +34,12 @@ function search() {
             address2: `${dr.practices[0].visit_address.city}, ${dr.practices[0].visit_address.state} ${dr.practices[0].visit_address.zip}`,
             phone: dr.practices[0].phones[0].number,
             acceptingNewPatients: dr.practices[0].accepts_new_patients 
-          }
+          };
 
           responseOutput.append(buildDrCard(payload));     
-        })
-      }
+        });
+      } else { responseOutput.append(noResults(query)); }
 
-      console.log(JSON.parse(response));
     })
     .catch(function(response) {
       loading.classList.add('hidden');

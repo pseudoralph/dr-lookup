@@ -1,10 +1,10 @@
 import { apiKey } from './.env';
 
 class DrSearch {
-  search(location, user_location, q) {
+  search(location, user_location, name, q) {
     return new Promise(function(resolve, reject) {
       let cors = (true) ? 'https://cors-anywhere.herokuapp.com/' : '';
-      const url = `${cors}https://api.betterdoctor.com/2016-03-01/doctors?query=${q}&location=${location}&user_location=${user_location}&skip=0&limit=25&user_key=${apiKey}`;
+      const url = `${cors}https://api.betterdoctor.com/2016-03-01/doctors?name=${name}&query=${q}&location=${location}&user_location=${user_location}&skip=0&limit=25&user_key=${apiKey}`;
       const request = new XMLHttpRequest();
 
       request.onload = function() {

@@ -16,7 +16,21 @@ function buildDrCard(drInfo) {
   return card;
 }
 
-export { buildDrCard };
+function noResults(q) {
+  let card = document.createElement('div');
+  card.setAttribute('class', 'card mx-auto');
+
+  card.innerHTML = `<div class="card-header">
+  No results found
+  </div>
+  <div class="card-body">
+    <p class="card-text">Your query for <code>${q}</code> returned 0 results.</p>
+    <p class="card-text">Try a different search.</p>
+  </div>`;
+
+  return card;
+}
+
+export { buildDrCard, noResults };
 
 
-// <br><span style="padding-right: 24px;"></span> Portland, OR 97202
