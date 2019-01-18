@@ -22,7 +22,6 @@ function search() {
   ailment.search('45.517%2C-122.670%2C25', '45.517%2C-122.670', name, query)
     .then(function(response) {
       const results = JSON.parse(response);
-
       loading.classList.add('hidden');
 
       if (results.meta.total > 0) {
@@ -32,6 +31,7 @@ function search() {
             address: `${dr.practices[0].visit_address.street}`,
             address2: `${dr.practices[0].visit_address.city}, ${dr.practices[0].visit_address.state} ${dr.practices[0].visit_address.zip}`,
             phone: dr.practices[0].phones[0].number,
+            url: dr.practices[0].website,
             acceptingNewPatients: dr.practices[0].accepts_new_patients 
           };
 
@@ -42,12 +42,7 @@ function search() {
     })
     .catch(function(response) {
       loading.classList.add('hidden');
-
       responseOutput.append(searchError(response));
-
-
-      console.log(`error!\n${response}`);
     });
-
 
 }
