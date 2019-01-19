@@ -1,4 +1,4 @@
-import { apiKey } from './.env';
+import { apiKey } from '../.env';
 
 class DrSearch {
   search(location, user_location, name, q) {
@@ -20,4 +20,3 @@ class DrSearch {
 }
 
 export { DrSearch };
-

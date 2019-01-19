@@ -16,14 +16,15 @@ function search() {
   const name = document.getElementById('dr-name').value;
   const loading = document.getElementById('loading');
   const responseOutput = document.getElementById('response');
+  const ailment = new DrSearch();
 
   responseOutput.innerHTML = "";
   loading.classList.remove('hidden');
 
-  const ailment = new DrSearch();
   ailment.search('45.517%2C-122.670%2C25', '45.517%2C-122.670', name, query)
     .then(function(response) {
       const results = JSON.parse(response);
+      
       loading.classList.add('hidden');
 
       if (results.meta.total > 0) {
