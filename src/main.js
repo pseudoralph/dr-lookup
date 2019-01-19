@@ -1,10 +1,12 @@
 import { DrSearch } from './dr-search';
 import { buildDrCard, noResults, searchError } from './dr-search-ui';
+import steth from './steth.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
 document.onreadystatechange = function() {
   if (document.readyState === 'interactive') {
+    document.getElementById('steth-logo').setAttribute('src', steth);
     document.getElementById('search').addEventListener('click', search );
   }
 };

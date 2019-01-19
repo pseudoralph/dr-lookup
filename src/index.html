@@ -10,9 +10,36 @@
   </head>
   <body>
 
+    <nav class="navbar navbar-light bg-light sticky-top">
+      <div>
+        <img src="" width="30" height="30" class="d-inline-block align-top" id="steth-logo">
+      </div>
+
+        <div>
+          <input type="text" class="top-input-box" id="query" placeholder="Medical issue">
+          <input type="text" class="top-input-box" id="dr-name" placeholder="Doctor's name (optional)">
+          <button class="btn btn-primary" id="search">Search</button>
+        </div>
+        
+        <div class="spinner-border hidden" role="status" id="loading">
+          <span class="sr-only"></span>
+        </div>
+
+    </nav>
+
+
+
+
+
+<!-- 
+      <div style="display: inline;">
+        <span class="spinner-border spinner-border-sm " role="status" id="loading"></span> 
+      </div> -->
+
+
     <div class="container-fluid">
 
-      <div class="row" id="top-search">
+      <!-- <div class="row" id="top-search">
         <div class="col-md-4 mx-auto">
 
           <div class="card">
@@ -30,18 +57,12 @@
                 <span class="spinner-border spinner-border-sm hidden" role="status" id="loading"></span> 
                 </button>
 
-             
-
               </div>
             </div>
 
             
-
-            
-
-            
         </div>
-      </div>
+      </div> -->
 
       <div class="row" id="response">
 

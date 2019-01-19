@@ -47,6 +47,8 @@ JS, wepback
 
 ### License
 
+Stethescope image provided https://www.clipartmax.com/middle/m2i8i8N4A0K9H7Z5_join-the-virginia-school-for-nurse-aides-team-cartoon-stethoscope-doctor/
+
 MIT License
 
 Copyright (c) 2019, Ralph Perdomo
