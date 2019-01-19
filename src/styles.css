@@ -3,17 +3,8 @@
 }
 
 .dr-card {
-  margin: 10px 0;
+  margin-bottom: 20px;
 }
-
-#top-search {
-  margin: 15px 0;
-}
-
-/* input.form-control {
-  display: inline-block!important;
-  width: 50%;
-} */
 
 #steth-logo {
   margin: 0 1em;
@@ -22,6 +13,10 @@
 #loading {
   margin-left: 1.5em;
   color: #cacaca;
+}
+
+#response {
+  padding-top: 15px; 
 }
 
 .navbar {

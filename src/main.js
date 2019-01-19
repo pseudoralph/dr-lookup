@@ -1,6 +1,6 @@
 import { DrSearch } from './dr-search';
 import { buildDrCard, noResults, searchError } from './dr-search-ui';
-import steth from './steth.png'
+import steth from './steth.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 

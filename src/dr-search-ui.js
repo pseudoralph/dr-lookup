@@ -24,14 +24,16 @@ function buildDrCard(drInfo) {
 
 function noResults(q) {
   let card = document.createElement('div');
-  card.setAttribute('class', 'card mx-auto');
+  card.setAttribute('class', 'col-md-5 mx-auto');
 
-  card.innerHTML = `<div class="card-header">
+  card.innerHTML = `<div class="card">
+  <div class="card-header">
   No results found
   </div>
   <div class="card-body">
     <p class="card-text">Your query for <code>${q}</code> returned 0 results.</p>
     <p class="card-text">Try a different search.</p>
+  </div>
   </div>`;
 
   return card;
@@ -39,14 +41,16 @@ function noResults(q) {
 
 function searchError(error) {
   let card = document.createElement('div');
-  card.setAttribute('class', 'card mx-auto');
+  card.setAttribute('class', 'col-md-5 mx-auto');
 
-  card.innerHTML = `<div class="card-header">
+  card.innerHTML = `<div class="card">
+  <div class="card-header">
   Error
   </div>
   <div class="card-body">
     <p class="card-text">An error has occured: <code>${error}</code></p>
     <p class="card-text">Please retry your search later.</p>
+  </div>
   </div>`;
 
   return card;

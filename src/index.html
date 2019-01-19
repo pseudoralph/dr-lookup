@@ -5,8 +5,6 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
-
   </head>
   <body>
 
@@ -18,56 +16,16 @@
         <div>
           <input type="text" class="top-input-box" id="query" placeholder="Medical issue">
           <input type="text" class="top-input-box" id="dr-name" placeholder="Doctor's name (optional)">
-          <button class="btn btn-primary" id="search">Search</button>
+          <button class="btn btn-secondary btn-sm" style="vertical-align: unset;" id="search">Search</button>
         </div>
         
         <div class="spinner-border hidden" role="status" id="loading">
           <span class="sr-only"></span>
         </div>
-
     </nav>
 
-
-
-
-
-<!-- 
-      <div style="display: inline;">
-        <span class="spinner-border spinner-border-sm " role="status" id="loading"></span> 
-      </div> -->
-
-
     <div class="container-fluid">
-
-      <!-- <div class="row" id="top-search">
-        <div class="col-md-4 mx-auto">
-
-          <div class="card">
-              <div class="card-body">
-
-                <div class="form-group">
-                  <label for="query">What's ailing you?</label>
-                  <input type="text" class="form-control" id="query">
-                </div>
-                <div class="form-group">
-                  <label for="query">Doctor's name (optional)</label>
-                  <input type="text" class="form-control" id="dr-name">
-                  </div>
-                <button class="btn btn-primary" id="search">Search
-                <span class="spinner-border spinner-border-sm hidden" role="status" id="loading"></span> 
-                </button>
-
-              </div>
-            </div>
-
-            
-        </div>
-      </div> -->
-
-      <div class="row" id="response">
-
-      </div>
-      
+      <div class="row" id="response"></div>
     </div>
     
   </body>
