@@ -1,19 +1,17 @@
 # Doctor Lookup
 
-#### Doctor search portal for patients demonstrating the use of an API call÷
+#### Doctor search portal for patients using BetterDoctor API
 
 #### Ralph Perdomo. January 18, 2019
 
 ## Description
 
-Search for a doctor based on your symptoms. 
+Search for a Portland-based doctor based on your medical issue and/or doctor's name. Returns doctor's practice information and whether he/she is accepting new patients.
 
 ## Setup/Installation Requirements
 
 * clone this repository using `git clone https://github.com/pseudoralph/dr-lookup.git`
 * navigate into this repo and download dependencies: `npm install`
-* run specs using `npm run test`
-  * a new browser window will open at `localhost:9876`
 * launch dev environment using `npm run start`
   * a new browser window will open at `localhost:8080`
 
@@ -25,30 +23,29 @@ JS, wepback
 
 ## Objectives
 
-- [ ] Does the application correctly use webpack?
+- [x] Does the application correctly use webpack?
 
-- [ ] Did you follow all setup instructions, including storing your API key?
+- [x] Did you follow all setup instructions, including storing your API key?
 
-- [ ] Does the app separate user interface and business logic functionalities into different JavaScript files?
+- [x] Does the app separate user interface and business logic functionalities into different JavaScript files?
 
-- [ ] Does the application correctly make an API call?
+- [x] Does the application correctly make an API call?
 
-- [ ] Does the application correctly parse data from the API response?
+- [x] Does the application correctly parse data from the API response?
 
-- [ ] Does the application handle errors when the API call doesn't return a 200 OK status as well as return a message if the API returns no results?
+- [x] Does the application handle errors when the API call doesn't return a 200 OK status as well as return a message if the API returns no results?
 
-- [ ] Code and Git documentation follow best practices (setup instructions in README, .gitignore file discluding unnecessary content from repo, detailed well-formatted commit messages, etc.)
+- [x] Code and Git documentation follow best practices (setup instructions in README, .gitignore file discluding unnecessary content from repo, detailed well-formatted commit messages, etc.)
 
-- [ ] Does the project demonstrate concepts covered this week? If prompted, are you able to discuss the flow of your code and the concepts behind it with an instructor using correct terminology?
+- [x] Does the project demonstrate concepts covered this week? If prompted, are you able to discuss the flow of your code and the concepts behind it with an instructor using correct terminology?
 
-- [ ] Is the app in a presentable, portfolio-quality state?
+- [x] Is the app in a presentable, portfolio-quality state?
 
-- [ ] Is required functionality in place by the Friday deadline?
+- [x] Is required functionality in place by the Friday deadline?
 
 ### License
 
-Stethescope image provided https://www.clipartmax.com/middle/m2i8i8N4A0K9H7Z5_join-the-virginia-school-for-nurse-aides-team-cartoon-stethoscope-doctor/
-
+Stethescope image provided by [https://www.clipartmax.com/](https://www.clipartmax.com/middle/m2i8i8N4A0K9H7Z5_join-the-virginia-school-for-nurse-aides-team-cartoon-stethoscope-doctor/)
 MIT License
 
 Copyright (c) 2019, Ralph Perdomo
