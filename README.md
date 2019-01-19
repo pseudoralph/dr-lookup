@@ -15,7 +15,7 @@ Search for a Portland-based doctor based on your medical issue and/or doctor's n
 * launch dev environment using `npm run start`
   * a new browser window will open at `localhost:8080`
 
-This webapp can also be viewed at [https://pseudoralph.github.io/dr-lookup/](https://pseudoralph.github.io/dr-lookup/)
+This webapp can also be viewed at [https://pseudoralph.github.io/dr-lookup/](https://pseudoralph.github.io/dr-lookup/index.html/)
 
 ## Technologies Used
 
@@ -45,7 +45,6 @@ JS, wepback
 
 ### License
 
-Stethescope image provided by [https://www.clipartmax.com/](https://www.clipartmax.com/middle/m2i8i8N4A0K9H7Z5_join-the-virginia-school-for-nurse-aides-team-cartoon-stethoscope-doctor/)
 MIT License
 
 Copyright (c) 2019, Ralph Perdomo
@@ -67,3 +66,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Stethescope image provided by [https://www.clipartmax.com/](https://www.clipartmax.com/middle/m2i8i8N4A0K9H7Z5_join-the-virginia-school-for-nurse-aides-team-cartoon-stethoscope-doctor/)
