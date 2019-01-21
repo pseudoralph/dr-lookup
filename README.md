@@ -15,7 +15,7 @@ Search for a Portland-based doctor based on your medical issue and/or doctor's n
 * launch dev environment using `npm run start`
   * a new browser window will open at `localhost:8080`
 
-This webapp can also be viewed at [https://pseudoralph.github.io/dr-lookup/](https://pseudoralph.github.io/dr-lookup/index.html/)
+This webapp can also be viewed at [https://pseudoralph.github.io/dr-lookup](https://pseudoralph.github.io/dr-lookup/index.html)
 
 ## Technologies Used
 
